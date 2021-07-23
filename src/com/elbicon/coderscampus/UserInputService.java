@@ -24,5 +24,8 @@ public class UserInputService {
     public static String getPassword(){
         return password;
     }
+    public static void CloseScanner(){
+        userInput.CloseScanner();
+    }
 
 }
