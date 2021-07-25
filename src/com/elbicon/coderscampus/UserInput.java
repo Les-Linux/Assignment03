@@ -6,20 +6,20 @@ package com.elbicon.coderscampus;
 import java.util.Scanner;
 
 public class UserInput {
-    private static Scanner scanner = new Scanner(System.in);
-    private static String username;
-    private static String password;
+    private static Scanner SCANNER = new Scanner(System.in);
+    private static String USERNAME;
+    private static String PASSWORD;
 
     public String[] GetUserCredentials() {
         String[] userCredentials = new String[2];
         try {
             System.out.println("Enter Username");
-            username = scanner.nextLine().trim();
+            USERNAME = SCANNER.nextLine().trim();
             System.out.println("Enter Password");
-            password = scanner.nextLine();
+            PASSWORD = SCANNER.nextLine();
 
-            userCredentials[0] = username;
-            userCredentials[1] = password;
+            userCredentials[0] = USERNAME;
+            userCredentials[1] = PASSWORD;
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -27,6 +27,6 @@ public class UserInput {
     }
 
     public void CloseScanner() {
-        scanner.close();
+        SCANNER.close();
     }
 }
