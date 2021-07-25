@@ -1,3 +1,6 @@
+/**
+ * A class which reads user credentials from CLI
+ */
 package com.elbicon.coderscampus;
 
 import java.util.Scanner;
@@ -11,7 +14,7 @@ public class UserInput {
         String[] userCredentials = new String[2];
         try {
             System.out.println("Enter Username");
-            username = scanner.nextLine();
+            username = scanner.nextLine().trim();
             System.out.println("Enter Password");
             password = scanner.nextLine();
 

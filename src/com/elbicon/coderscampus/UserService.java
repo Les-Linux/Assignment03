@@ -1,3 +1,7 @@
+/**
+ * A class which reads user credentials from a file and returns
+ * credentials as user objects
+ */
 package com.elbicon.coderscampus;
 
 public class UserService {
@@ -5,6 +9,7 @@ public class UserService {
     private String password;
     private String name;
     String[] userInfo;
+
     public User getUser(String userCredential) {
         User user = new User();
 

@@ -1,3 +1,7 @@
+/**
+ * A class which gets user credentials from UserInput object
+ * and sets, returns user credentials
+ */
 package com.elbicon.coderscampus;
 
 public class UserInputService {
@@ -12,19 +16,24 @@ public class UserInputService {
         setUsername();
         setPassword();
     }
-    private static void setUsername(){
+
+    private static void setUsername() {
         username = userCredentials[0];
     }
-    public static String getUsername(){
+
+    public static String getUsername() {
         return username;
     }
-    private static void setPassword(){
+
+    private static void setPassword() {
         password = userCredentials[1];
     }
-    public static String getPassword(){
+
+    public static String getPassword() {
         return password;
     }
-    public static void CloseScanner(){
+
+    public static void CloseScanner() {
         userInput.CloseScanner();
     }
 
